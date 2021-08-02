@@ -34,7 +34,9 @@ import axios from "axios"
 
 
  const Request =(type,url)=>{
-
+    console.log('====================================');
+    console.log(url);
+    console.log('====================================');
     const success_validation =(res)=>{
         
         let response = {

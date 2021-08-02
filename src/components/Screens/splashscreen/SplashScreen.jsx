@@ -28,7 +28,10 @@ function SplashScreen() {
     // console.log(splashscreendata);
     // console.log('error');
     // console.log(splashscreendata.Status);
-    fetch_splashscreen_data(dispatch)
+    React.useEffect(() => {
+        fetch_splashscreen_data(dispatch)
+    }, [dispatch])
+    
     return (
         <div className="SplashScreen">
             {/* {splashscreendata.map((item )=> {
